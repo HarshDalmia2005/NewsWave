@@ -1,0 +1,39 @@
+/* Add this to your CSS file */
+.scrollable-dropdown {
+    max-height: 250px;
+    /* Set your desired max height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.scrollable-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+/* .card{
+    box-shadow:   0.3em 0.3em 1em rgb(200 0 0 / 60%);;
+} */
+
+.app {
+    min-width: max-content;
+    min-height: 100vh;
+    background-color: #463F3A;
+    overflow: scroll;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#dark-nav-dropdown {
+    color: #fff;
+}
+
+/* .card{
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 30px, rgba(255, 254, 254, 0.22) 0px 10px 8px;
+} */
+

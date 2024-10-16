@@ -15,7 +15,7 @@ const News = ({ progress, setProgress }) => {
         try {
             setIsLoading(true);
             setProgress(10);
-            const response = await fetch(`http://localhost:3000/news/all-news?page=${page}&pageSize=4`);
+            const response = await fetch(`https://newswave-backend-wzew.onrender.com/news/all-news?page=${page}&pageSize=4`);
             setProgress(30);
             const news = await response.json();
             setProgress(70)

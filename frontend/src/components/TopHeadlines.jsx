@@ -16,7 +16,7 @@ const TopHeadlines = ({ progress, setProgress }) => {
             setIsLoading(true);
             setProgress(10);
             const paramCategory = params.category ? `category=${params.category}&` : "";
-            const response = await fetch(`http://localhost:3000/news/top-headlines?${paramCategory}page=${page}&language=en&pageSize=4`);
+            const response = await fetch(`https://newswave-backend-wzew.onrender.com/news/top-headlines?${paramCategory}page=${page}&language=en&pageSize=4`);
             setProgress(30);
             const news = await response.json();
             setProgress(70);
